@@ -1,0 +1,17 @@
+ion-content {
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 0;
+  --padding-bottom: 0;
+}
+
+ion-list {
+  overflow-y: auto;
+  max-height: calc(100vh - 100px); /* Ajusta según tus necesidades */
+}
+
+ion-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

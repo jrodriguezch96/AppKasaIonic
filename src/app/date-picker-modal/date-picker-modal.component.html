@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Seleccionar Rango de Fechas</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">Cerrar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Fecha Inicio</ion-label>
+      <ion-datetime
+        displayFormat="YYYY-MM-DD"
+        [(ngModel)]="startDate"
+        (ionChange)="dateChanged('start', $event)">
+      </ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Fecha Fin</ion-label>
+      <ion-datetime
+        displayFormat="YYYY-MM-DD"
+        [(ngModel)]="endDate"
+        (ionChange)="dateChanged('end', $event)">
+      </ion-datetime>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="applyDateRange()">Aplicar</ion-button>
+</ion-content>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Consumo Energético</string>
+    <string name="title_activity_main">Consumo Energético</string>
+    <string name="package_name">com.app.kasa</string>
+    <string name="custom_url_scheme">com.app.kasa</string>
+</resources>
